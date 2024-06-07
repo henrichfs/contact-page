@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h1>Formulário de Contato</h1>
+
+        <div class="input-name-lastname">
+          <div class="input-area">
+            <h3>Nome<span class="requiered">*</span></h3>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div class="input-area">
+            <h3>Sobrenome</h3>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+        </div>
+
+        <div class="input-area">
+          <h3>Email<span class="requiered">*</span></h3>
+          <input type="text" name="email" id="email" required />
+        </div>
+
+        <div class="input-area">
+          <h3>Telefone</h3>
+          <input type="text" name="phone" id="phone" />
+        </div>
+
+        <div class="input-area">
+          <h3>Mensagem<span class="requiered">*</span></h3>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

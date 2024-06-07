@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+main {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.input-name-lastname {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.requiered {
+  color: red;
+  margin-left: 1px;
+}
+
+@media (max-width: 768px) {
+  .input-name-lastname {
+    flex-direction: column;
+  }
+
+  form {
+    height: 95vh;
+    width: 95vw;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  input,
+  textarea {
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+  }
+
+  .input-name-lastname {
+    display: flex;
+    gap: 15px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+  }
+}
